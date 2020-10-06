@@ -20,8 +20,15 @@ const people = [
 // Use Math.round()
 
 function avgAge(peopleArr) {
-  // return something
-}
+  let total = 0;
+  for (let i = 0; i < people.length; i++) {
+    let newArr = Object.values(people[i]).filter(element => {return typeof element === 'number'});
+    total = total + newArr[0];
+  }
+  let average = total / peopleArr.length;
+  // console.log(Math.round(average));
+  return Math.round(average);
+};
 
 // 2. Do a console.log to verify your function.
 
