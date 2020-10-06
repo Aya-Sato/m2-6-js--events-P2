@@ -21,8 +21,8 @@ const people = [
 
 function avgAge(peopleArr) {
   let total = 0;
-  for (let i = 0; i < people.length; i++) {
-    let newArr = Object.values(people[i]).filter(element => {return typeof element === 'number'});
+  for (let i = 0; i < peopleArr.length; i++) {
+    let newArr = Object.values(peopleArr[i]).filter(element => {return typeof element === 'number'});
     total = total + newArr[0];
   }
   let average = total / peopleArr.length;
