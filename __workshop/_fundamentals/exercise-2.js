@@ -26,11 +26,11 @@ function avgAge(peopleArr) {
     total = total + newArr[0];
   }
   let average = total / peopleArr.length;
-  // console.log(Math.round(average));
   return Math.round(average);
 };
 
 // 2. Do a console.log to verify your function.
+console.log(avgAge(people));
 
 // 3. Run the test to validate: yarn test exercise-2
 
