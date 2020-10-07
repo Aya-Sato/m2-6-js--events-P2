@@ -86,10 +86,18 @@ const staffMembers = [
 ];
 
 const getData = (arr, key, val) => {
-  // return something
-};
+  if (key === 'name' || key === 'title') {
+    let checkMatch = arr.filter(person => {return person[key] == val});
+    return checkMatch;
+  }
+  else if (key === 'javascript' || key === 'python' || key === 'sql') {
+    let checkMatch = arr.filter(person => {return person.skillLevels.[key] >= val});
+    return checkMatch;
+  }
+}
 
 // 2. Do a console.log to verify your function.
+console.log(getData(staffMembers, 'javascript', 6));
 
 // 3. Run the test to validate: yarn test exercise-5
 
