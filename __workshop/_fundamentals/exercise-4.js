@@ -23,7 +23,7 @@ function olderPeople(peopleArr, age) {
 }
 
 // 2. Do a console.log to verify your function.
-console.log(olderPeople(people, 31));
+console.log(olderPeople(people, 32));
 
 // 3. Run the test to validate: yarn test exercise-4
 
