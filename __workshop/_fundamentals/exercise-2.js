@@ -29,6 +29,7 @@ function avgAge(peopleArr) {
   return Math.round(average);
 };
 
+
 // 2. Do a console.log to verify your function.
 console.log(avgAge(people));
 
