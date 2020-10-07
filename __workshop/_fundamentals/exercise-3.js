@@ -18,10 +18,33 @@ const people = [
 // an argument and returns an array of their full names (each full name is a string).
 
 function fullName(peopleArr) {
-  // return something
-}
+  let resultArr = [];
+  for (let i = 0; i < peopleArr.length; i++) {
+    let newArr = Object.values(peopleArr[i]).filter(element => {return typeof element === 'object'});
+    let obj = newArr[0];
+    let toString;
+    if (obj.hasOwnProperty('middle') === true) {
+      toString = obj['first'] + " " + obj['middle'] + " " + obj['last'];
+    }
+    else {
+      toString = obj['first'] + " " + obj['last'];
+    }
+    let arrayedName = toString.split(',');
+    resultArr.push(arrayedName[0]); 
+  }
+  return resultArr;
+};
+
+//Diana's better answer:
+// function fullName2(peopleArr){
+//   return peopleArr.map(person=> {
+//     const fullName = [name.first, name.middle, name.last].filter(name => typeof name === 'string');
+//     return fullName.join('');
+//   })
+// }
 
 // 2. Do a console.log to verify your function.
+console.log(fullName(people));
 
 // 3. Run the test to validate: yarn test exercise-3
 
