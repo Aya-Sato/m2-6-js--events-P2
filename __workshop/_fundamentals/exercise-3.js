@@ -35,7 +35,6 @@ function fullName(peopleArr) {
   return resultArr;
 };
 
-
 //Diana's better answer:
 // function fullName(people){
 //   return people.map(person=> {
