@@ -35,17 +35,18 @@ function fullName(peopleArr) {
   return resultArr;
 };
 
+
 //Diana's better answer:
-// function fullName2(peopleArr){
-//   return peopleArr.map(person=> {
-//     const fullName = [name.first, name.middle, name.last].filter(name => typeof name === 'string');
-//     return fullName.join('');
+// function fullName(people){
+//   return people.map(person=> {
+//     const {first, middle, last} = person && person.name || {};
+//     const fullName = [first, middle, last].filter(name => typeof name === 'string');
+//     return fullName.join(' ');
 //   })
 // }
 
 // 2. Do a console.log to verify your function.
 console.log(fullName(people));
-
 // 3. Run the test to validate: yarn test exercise-3
 
 module.exports = { fullName, people };
