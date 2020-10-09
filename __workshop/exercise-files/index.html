@@ -5,10 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
+    <link href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap" rel="stylesheet" />
     <title>Signup Form</title>
   </head>
   <body>
+    <div class="wrapper">
+      <h1>Signup Form</h1>
+      <form>
+        <div class="input-container">
+          <label for="name" class="label">Full name:</label>
+          <input id="name" autocomplete="name" required/>
+        </div>
+        <div class="input-container">
+          <label for="address" class="label">Street address</label>
+          <input id="address" autocomplete="street-address" required/>
+        </div>
+        <div class="input-container">
+          <label for="email" class="label">Email address</label>
+          <input tyep="email" id="email" autocomplete="email" required/>
+        </div>
+        <div class="input-container">
+          <label for="phone" class="label">Phone number</label>
+          <input id="phone" autocomplete="tel" required/>
+        </div>
+        <div class="input-container">
+          <label for="pw" class="label">Password</label>
+          <input type="password" id="pw" autocomplete="new-password" required/>
+        </div>
+        <div class="input-container">
+          <label for="confirm-pw" class="label">Confirm Password</label>
+          <input type="password" id="confirm" autocomplete="new-password" required/>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="terms"/>
+          <label for="terms" class ="terms-label">I agree to the <a href="#">terms of service</a>.</label>
+        </div>
+        <div class="error"></div>
+        <footer>
+          <button class="clear">Clear</button>
+          <button class="submit" type="submit">Submit</button>
+        </footer>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

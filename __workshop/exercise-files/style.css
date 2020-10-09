@@ -1,1 +1,106 @@
-/* add css here */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Jost";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+.wrapper {
+    position: relative;
+    top: 32px;
+    max-width: 475px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 0;
+}
+
+input {
+    border: 2px solid #f2f2f2;
+    border-radius: 5px;
+    width: 280px;
+}
+
+.label {
+    padding-right: 15px;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    margin-top: 50px;
+    height: 50px;
+    width: 427px;
+}
+
+#terms {
+    width: 30px;
+    position: relative;
+    top: 20px;
+    border-radius: 2px;
+}
+
+.terms-label {
+    height: 20px;
+    position: relative;
+    top: 14px;
+}
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 40px;
+    border-radius:5px;
+    color: white;
+}
+
+.clear {
+    background-color: hsl(333deg, 100%, 44%);
+}
+
+.submit {
+    background-color: hsl(256deg, 100%, 44%);
+}
+
+.error {
+    display: none;
+    background-color: hsla(333deg, 100%, 44%, 0.25);
+    height: 80px;
+    margin-top: 30px;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
